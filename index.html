@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 id="head"> freeCodeCamp survey-form :)</h1>
+        <h2 id="subheading">Thank you for taking the time to help us improve the platform...</h2>
+        <form id="survey-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="name">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+            <label for="age">Age:(Optional)</label>
+            <input type="number" id="age" name="age" min="18" max="99">
+
+            <label>Which option best describes your current role?</label>
+            <select name="role" id="role">
+                <option disabled selected value>Select your role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full time learner</option>
+                <option value="other">Others</option>
+            </select>
+
+            <label for="user">Would you recommend freeCodeCamp to a friend?</label>
+            <select name="user" id="user">
+                <option disabled selected value>select one</option>
+                <option value="definitely">Definitely</option>
+                <option value="maybe">Maybe</option>
+                <option value="not-sure">Not sure</option>
+            </select>
+
+            <label>What is your favorite feature of freeCodeCamp? </label>
+            <select name="fav" id="fav">
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open">Open source</option>
+            </select>
+
+            <label for="Any comment or suggestion ? ">Any comment or suggestion ?</label>
+            <textarea id="Any comment or suggestion ?" placeholder="Enter your comment here..." rows="4" required></textarea>
+
+           
+
+            <button type="submit">Submit</button>
+
+
+            <footer class="copyright">
+                &copy; 2023 Amisha Aryani. All rights reserved.
+              </footer>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+ 
